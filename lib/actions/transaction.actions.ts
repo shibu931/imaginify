@@ -50,6 +50,7 @@ export async function createTransaction(transaction: CreateTransactionParams) {
 
     return JSON.parse(JSON.stringify(newTransaction));
   } catch (error) {
+    console.log(error);
     handleError(error)
   }
 }

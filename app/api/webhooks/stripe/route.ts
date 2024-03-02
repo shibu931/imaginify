@@ -38,5 +38,5 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "OK", transaction: newTransaction });
   }
 
-  return new Response("", { status: 200 });
+  return NextResponse.json({ message: "Transaction Not Created"},{status:200});
 }
